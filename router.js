@@ -1,0 +1,11 @@
+const { Router } = require('express')
+const { validate } = require('./validation')
+const schema = require('./schema')
+const controller = require('./controllers')
+
+module.exports = () => Router({ mergeParams: true })
+  .get('/photos/:album/:file', controller.raw)
+  .delete('/photos', validate(schema.remove), controller.remove)
+  .delete('/photos/:album/:file', controller.removeFile)
+  .put('/photos', validate(schema.upload), controller.upload)
+  .post('/photos/list', validate(schema.filter), controller.getList)

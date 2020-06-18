@@ -1,0 +1,34 @@
+{
+  "name": "album",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon || true",
+    "fix": "standard --fix || true"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/InvestaX/album.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/InvestaX/album/issues"
+  },
+  "homepage": "https://github.com/InvestaX/album#readme",
+  "dependencies": {
+    "@hapi/joi": "^17.1.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.1.7-alpha.3",
+    "file-type": "^14.6.2",
+    "node-enumerable": "^5.0.1",
+    "uuid": "^8.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4",
+    "standard": "^14.3.4"
+  }
+}

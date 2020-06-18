@@ -1,0 +1,13 @@
+.envrc
+.env
+.nyc_output
+.vscode
+node_modules
+.DS_STORE
+*.heapsnapshot
+resourceRegistry.log
+coverage
+target
+/data
+.ignored
+.vault
