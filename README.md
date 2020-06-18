@@ -6,7 +6,7 @@
 ## How to Start?
 
 ```
-git clone https://github.com/InvestaX/album
+git clone https://github.com/binodnp/album
 cd album
 npm install
 npm start
