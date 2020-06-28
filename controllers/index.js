@@ -5,7 +5,7 @@ const fu = require('../utils/file')
 
 const getList = async (req, res) => {
   try {
-    const host = `${req.protocol}://${req.headers.origin || req.headers.host}`
+    const host = `${req.protocol}://${req.headers.host || req.headers.origin}`
     const { skip, limit } = req.body
     const { count, documents } = await service.listFiles(host, skip, limit)
 
