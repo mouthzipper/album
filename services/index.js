@@ -46,7 +46,7 @@ const listFiles = async (host, skip, limit) => {
 
   return {
     documents,
-    count: files.length
+    count: documents.length
   }
 }
 
