@@ -6,7 +6,7 @@ const fileUpload = require('express-fileupload')
 const router = require('./router')
 
 const REQUEST_LIMIT = '10mb'
-const PORT = 8888
+const PORT = process.env.PORT || 8888
 
 const start = async () => {
   http.listen(PORT, () =>
